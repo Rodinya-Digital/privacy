@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Şişe Çevir - Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0 auto; padding: 32px 20px 64px; max-width: 720px;
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.7rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 32px; }
+  .updated { color: #6b7280; font-size: .9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+  th, td { border: 1px solid #d1d5db; padding: 8px 10px; text-align: left; vertical-align: top; font-size: .95rem; }
+  th { background: rgba(127,127,127,.12); }
+  code { background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 4px; }
+  code, a { overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<h1>Şişe Çevir - Gizlilik Politikası</h1>
+<p class="updated">Yürürlük tarihi: 25 Eylül 2026</p>
+
+<p>Bu politika, PangeaSoft tarafından geliştirilen <strong>Şişe Çevir</strong>
+(paket adı <code>com.pangeasoft.spinthebottle</code>) mobil uygulaması için geçerlidir. Bu metne
+uygulamada <em>Ayarlar &rarr; Gizlilik politikası</em> yolundan da ulaşabilirsiniz.</p>
+
+<h2>1. Kısaca</h2>
+<p>Uygulamada hesap açma, oturum açma veya üyelik yoktur; uygulama içi satın alma da bulunmaz.
+Uygulama sizden e-posta adresi ya da telefon numarası istemez; konumunuza, kameranıza,
+mikrofonunuza, rehberinize veya fotoğraflarınıza erişim izni de istemez. Oyun tamamen cihazınızda
+çalışır ve uygulama, oyuna yazdığınız oyuncu adlarını hiçbir yere göndermez. Uygulamada Google AdMob
+tarafından sunulan reklamlar gösterilir; oyunun nasıl oynandığını anlamak için de Google Analytics
+for Firebase kullanılır. Bu iki Google hizmetinin işlediği veriler aşağıda açıklanmıştır.</p>
+
+<h2>2. Cihazınızda saklanan bilgiler</h2>
+<p>Uygulamayı her açtığınızda oyuncuları ve ayarları yeniden girmek zorunda kalmamanız için
+aşağıdaki bilgiler cihazınızın kendi depolama alanında, yalnızca bu uygulamanın erişebildiği
+bölümde tutulur:</p>
+<ul>
+  <li>Masadaki oyuncuların adları ve her oyuncunun işareti</li>
+  <li>Açık desteler, görev sertliği ve Aile modu</li>
+  <li>Titreşim, ses, sakin mod, sayaç süresi, ceza destesi ve kaçış sınırı ayarları</li>
+  <li>Aynı kartların yeniden gelmemesi için daha önce çıkan kartların listesi</li>
+  <li>Kurulum ekranındaki ipuçlarının artık gösterilmemesi gerektiği bilgisi</li>
+</ul>
+<p>Uygulama, oyuncu adlarını ve çıkan kartların listesini hiçbir yere göndermez. Ayarlardan yalnızca
+görev sertliği, sayaç süresi, ceza destesi ve sakin mod bilgileri, oyun başladığında 3. bölümde
+açıklanan istatistik olayıyla birlikte gönderilir.</p>
+<p>Kimin kaç kez pas geçtiği, kaç soru yanıtlayıp kaç görev yaptığı, kaç yuh ve bravo aldığı gibi
+kişi başı sayaçlar kaydedilmez ve gönderilmez: yalnızca oyun sürerken bellekte tutulur ve uygulama
+kapandığında kaybolur.</p>
+<p>Telefonunuzun kendi yedekleme özelliği (Android'de Google yedeklemesi, iPhone'da iCloud yedeklemesi)
+açıksa, bu bilgiler cihaz yedeğinize dâhil edilebilir ve uygulamayı yeniden yüklediğinizde geri
+gelebilir. Bu yedek sizin hesabınızda tutulur ve bize ulaşmaz.</p>
+
+<h2>3. Kullanım istatistikleri (Google Analytics for Firebase)</h2>
+<p>Oyunun nasıl oynandığını anlamak ve geliştirmek için Google Analytics for Firebase kullanılır.
+Uygulamanın kendisinin gönderdiği olayların tamamı şunlardır:</p>
+<table>
+  <tr><th>Olay ve zamanı</th><th>Gönderilen bilgiler</th></tr>
+  <tr><td><code>game_start</code><br />Oyuncuları yazıp OYNA'ya bastığınızda</td><td>Oyuncu sayısı, açık deste sayısı, görev sertliği (1 ile 3 arası; 1 Aile modudur), sayaç süresi (kapalıysa 0), ceza destesinin ve sakin modun açık olup olmadığı</td></tr>
+  <tr><td><code>spin_landed</code><br />Şişe her durduğunda</td><td>Oyuncu sayısı, şişenin kaç tur döndüğü ve dönüşün kaç milisaniye sürdüğü</td></tr>
+  <tr><td><code>round_end</code><br />Kart YAPTI ya da PAS GEÇ ile kapandığında</td><td>Turun nasıl bittiği, kartın türü (doğruluk ya da cesaret), turun sırası, oyuncu sayısı</td></tr>
+  <tr><td><code>night_summary</code><br />Her sekiz turda bir ve oyunu bitirdiğinizde çıkan özet ekranında</td><td>Oynanan tur sayısı, masadaki toplam pas sayısı, oyuncu sayısı</td></tr>
+  <tr><td><code>screen_view</code><br />Bir ekran açıldığında</td><td>Ekranın adı (ana menü, oyuncular, masa, ayarlar, nasıl oynanır)</td></tr>
+</table>
+<p>Bu olaylar oyuncu adlarını, kartlardaki soru ve görevleri, şişenin kimde durduğunu ya da kimin
+ne yaptığını hiçbir zaman içermez.</p>
+<p>Firebase, kullanıldığı her uygulamada olduğu gibi bazı bilgileri de kendiliğinden toplar:</p>
+<table>
+  <tr><th>Veri</th><th>Amaç</th></tr>
+  <tr><td>Uygulama örneği kimliği (bu kurulum için rastgele oluşturulan bir kimlik), cihazın reklam kimliği (iPhone ve iPad'de yalnızca izin verirseniz) ve Android kimliği (SSAID); iPhone ve iPad'de ayrıca satıcı kimliği (IDFV)</td><td>Kullanıcı ve oturum sayılarının ölçülmesi. 5. bölümdeki izinler açıksa reklam ölçümü ve reklam kişiselleştirme için de kullanılabilir.</td></tr>
+  <tr><td>Cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, uygulama sürümü, dil)</td><td>Uygulamanın farklı cihazlarda nasıl çalıştığının anlaşılması</td></tr>
+  <tr><td>IP adresinden türetilen yaklaşık konum (ülke veya şehir düzeyi)</td><td>Bölgesel kullanım istatistikleri</td></tr>
+  <tr><td>Otomatik olaylar (ilk açılış, oturum başlangıcı, kullanım süresi, ekran görüntüleme, uygulamanın güncellenmesi ve kaldırılması)</td><td>Kullanım süresinin ve sürüm geçişlerinin ölçülmesi</td></tr>
+  <tr><td>Yükleme kaynağı (Google Play yükleme yönlendiricisi)</td><td>Uygulamanın hangi bağlantı veya kampanya üzerinden yüklendiğinin ölçülmesi</td></tr>
+</table>
+<p>Google'ın bu verileri nasıl işlediğini ve koruduğunu
+<a href="https://support.google.com/analytics/answer/6004245?hl=tr">support.google.com/analytics/answer/6004245</a>
+ve <a href="https://policies.google.com/technologies/partner-sites?hl=tr">policies.google.com/technologies/partner-sites</a>
+adreslerinde inceleyebilirsiniz. Onay gereken bölgelerde, onay formunu yanıtladıktan sonra kaydedilen
+verilerin nasıl kullanılabileceği formda yaptığınız seçime bağlıdır; formu ilk kez yanıtlamadan önceki
+durum 5. bölümde anlatılmıştır.</p>
+
+<h2>4. Reklamlar (Google AdMob)</h2>
+<p>Uygulamada bazı ekranların altında şerit (banner) reklamlar, bazı turların arasında da tam ekran
+geçiş reklamları gösterilir. Reklamlar Google AdMob reklam ağı tarafından sunulur. Reklamları
+sunmak, ölçümlemek ve kötüye kullanımı önlemek için Google aşağıdaki verileri işleyebilir:</p>
+<table>
+  <tr><th>Veri</th><th>Amaç</th></tr>
+  <tr><td>Reklam kimliği (Android reklam kimliği; iPhone ve iPad'de yalnızca izin verirseniz IDFA) ve Android'de App Set ID</td><td>Reklam gösterimi, sıklık sınırı, ölçümleme ve sahtecilik önleme</td></tr>
+  <tr><td>Cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, uygulama sürümü)</td><td>Reklamın cihaza uygun biçimde gösterilmesi</td></tr>
+  <tr><td>Uygulamanın ve reklam yazılımının performans bilgileri (açılış süresi, takılma oranı, enerji kullanımı)</td><td>Reklam hizmetinin performansının ölçülmesi</td></tr>
+  <tr><td>IP adresinden türetilen yaklaşık konum (ülke veya şehir düzeyi)</td><td>Bölgeye uygun reklam ve yasal yükümlülükler</td></tr>
+  <tr><td>Reklam etkileşimleri (gösterim, tıklama)</td><td>Ölçümleme ve sahtecilik önleme</td></tr>
+</table>
+<p>Google'ın bu verileri nasıl kullandığını
+<a href="https://business.safety.google/privacy/">business.safety.google/privacy</a> adresinde
+inceleyebilirsiniz.</p>
+
+<h2>5. Onay formu ve reklam tercihleriniz</h2>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre gibi yasaların onay istediği bölgelerde, ilk
+açılışta ve onayın yenilenmesi gerektiğinde Google'ın onay formu gösterilir. İlk açılışta form
+yanıtlanmadan reklam istenmez; onayın yenilenmesi gerektiğinde, yeni yanıtınızı verene kadar önceki
+yanıtınız geçerli kalır. Yanıtınız cihazınızda saklanır ve Google'ın izin modu (Consent Mode)
+aracılığıyla Firebase Analytics'e de uygulanır:</p>
+<table>
+  <tr><th>Formda izin verdiğiniz amaç</th><th>Firebase Analytics'e verilen izin</th></tr>
+  <tr><td>Cihazda bilgi depolama ve bilgiye erişme</td><td>Analiz ve reklam için cihazda depolama (<code>analytics_storage</code>, <code>ad_storage</code>)</td></tr>
+  <tr><td>Cihazda bilgi depolama ve bilgiye erişme ile birlikte reklam performansını ölçme</td><td>Reklamla ilgili kullanıcı verisinin Google'a gönderilmesi (<code>ad_user_data</code>)</td></tr>
+  <tr><td>Kişiselleştirilmiş reklam için profil oluşturma ve bu profili reklam seçerken kullanma</td><td>Reklam kişiselleştirme (<code>ad_personalization</code>)</td></tr>
+</table>
+<p>Bir satırdaki amaçlardan birine izin vermezseniz o satırdaki izin kapalı kalır. Bu onayın
+gerekmediği bölgelerde izinlerin tamamı açıktır.</p>
+<p>Yanıtınız, verdiğiniz andan sonra kaydedilen verilere uygulanır. Formu ilk kez yanıtlayana kadar
+Firebase Analytics'te izinlerin tamamı açıktır. Bu yüzden uygulamayı ilk açtığınızda, siz formu
+yanıtlamadan önce oluşan ilk açılış, oturum başlangıcı, kullanım süresi ve ekran görüntüleme
+olayları bu izinlerle kaydedilir ve Google'a gönderilir. Form, örneğin internet bağlantısı olmadığı
+için gösterilemezse bu durum formu yanıtlayana kadar sürer; bu sırada oynadığınız oyunların olayları
+da aynı izinlerle gönderilir.</p>
+<p>Onay formunun gösterildiği bölgelerde yanıtınızı istediğiniz zaman uygulama içinden
+<em>Ayarlar &rarr; Reklam tercihleri</em> yolunu izleyerek değiştirebilirsiniz. Yeni yanıtınız,
+form kapanır kapanmaz hem reklamlara hem de Firebase Analytics'e uygulanır.</p>
+<p>Bölgenizden bağımsız olarak, Android cihazınızda <em>Ayarlar &rarr; Gizlilik &rarr; Reklamlar</em>
+(bazı cihazlarda <em>Ayarlar &rarr; Google &rarr; Reklamlar</em>) yolundan reklam kimliğinizi
+sıfırlayabilir veya silebilirsiniz. iPhone ve iPad'de reklam kimliği yalnızca uygulamanın izleme
+izni isteğine onay verirseniz kullanılır; bu izni istediğiniz zaman iOS ayarlarının Gizlilik ve
+Güvenlik bölümünden geri alabilirsiniz.</p>
+
+<h2>6. Çocuklar</h2>
+<p>Uygulama 13 yaş ve üzeri kullanıcılar içindir; 13 yaşın altındaki çocuklara yönelik değildir ve
+bilerek 13 yaşından küçük kullanıcılardan veri toplamaz. Ayarlardaki Aile modu yalnızca en yumuşak
+görevlerin gelmesini sağlayan bir içerik ayarıdır; uygulamanın hedef kitlesini değiştirmez.
+Reklamlar en fazla Genç (T) içerik derecesiyle sınırlandırılmıştır.</p>
+
+<h2>7. Verilerinizi silme</h2>
+<ul>
+  <li>Bir oyuncuyu kurulum ekranında adının yanındaki çarpıya basarak masadan kaldırabilirsiniz.</li>
+  <li>Daha önce çıkan kartların listesini <em>Ayarlar &rarr; Görülen kartları sıfırla</em> satırından
+  temizleyebilirsiniz.</li>
+  <li>Uygulamayı cihazınızdan kaldırdığınızda cihazda saklanan bilgilerin tamamı silinir. Android'de
+  uygulamayı kaldırmadan da aynı sonuca ulaşabilirsiniz: <em>Ayarlar &rarr; Uygulamalar &rarr; Şişe Çevir
+  &rarr; Depolama</em> bölümündeki veri temizleme düğmesine basmanız yeterlidir (menü adları cihaza
+  göre değişebilir).</li>
+  <li>Google Analytics for Firebase'e giden veriler adınız veya iletişim bilgilerinizle eşleştirilmediği
+  için bunları kişi bazında bulup silemeyiz; bu veriler 8. bölümde belirtilen saklama süresi dolunca
+  Google tarafından otomatik olarak silinir.</li>
+  <li>Reklam verileri için reklam kimliğinizi 5. bölümde anlatıldığı gibi sıfırlayabilir veya
+  silebilirsiniz. Google'ın bu verileri yönetmeniz için sunduğu diğer ayarlar
+  <a href="https://policies.google.com/technologies/partner-sites?hl=tr">policies.google.com/technologies/partner-sites</a>
+  adresinde anlatılmıştır.</li>
+</ul>
+
+<h2>8. Veri güvenliği ve saklama</h2>
+<p>Uygulamanın kendi sunucusu yoktur. Oyuncu adları ve çıkan kartların listesi bize, reklam ağına ya da
+analiz hizmetine hiçbir zaman gönderilmez; bu bilgiler cihazınızdan yalnızca 2. bölümde anlatılan ve
+sizin hesabınızda tutulan cihaz yedeğiyle çıkabilir. Bunun dışında cihazdan çıkan veriler, 3., 4. ve 5.
+bölümlerde açıklanan ve Google hizmetlerine iletilen analiz, reklam ve onay verileridir; bu veriler
+şifreli bağlantı üzerinden gönderilir.</p>
+<p>Cihazınızdaki bilgiler siz silene ya da uygulamayı kaldırana kadar saklanır. Google Analytics for
+Firebase'teki olay ve kullanıcı düzeyindeki verilerin saklama süresi en fazla 14 aydır; süresi dolan
+veriler Google tarafından ayda bir, otomatik olarak silinir. Bu verilerden üretilen ve kimseyi
+tanımlamayan toplu raporlar bu süreden sonra da tutulabilir. AdMob'un işlediği reklam verilerinin
+saklanma süreleri Google'ın
+<a href="https://policies.google.com/technologies/retention?hl=tr">policies.google.com/technologies/retention</a>
+adresindeki saklama politikasına tabidir.</p>
+
+<h2>9. Haklarınız</h2>
+<p>KVKK ve GDPR kapsamındaki haklarınızı (verilerinize erişme, düzeltilmelerini veya silinmelerini
+isteme, işlenmelerine itiraz etme gibi) kullanmak için aşağıdaki e-posta adresinden bize
+ulaşabilirsiniz. Uygulama sizi tanımlayan bir kayıt tutmadığından, Google'a giden verileri kişi
+bazında bulamaz, düzeltemez veya silemeyiz. Bu verilerle ilgili seçenekleriniz 7. bölümde, saklama
+süreleri 8. bölümde anlatılmıştır.</p>
+<p><strong>Hukuki dayanak.</strong> Onay gereken bölgelerde analiz ve reklam verileri, onay formunda
+verdiğiniz izne ve formda gösterilen meşru menfaat gerekçelerine dayanılarak işlenir. Türkiye dâhil
+diğer bölgelerde bu veriler, uygulamayı ücretsiz sunabilmek ve geliştirebilmek için meşru
+menfaatimize dayanılarak işlenir.</p>
+<p><strong>Yurt dışına aktarım.</strong> Google bu verileri Türkiye ve Avrupa Ekonomik Alanı dışındaki
+ülkelerde, örneğin ABD'deki sunucularında işleyebilir. Google'ın bu aktarımlarda dayandığı hukuki
+çerçeveler <a href="https://policies.google.com/privacy/frameworks?hl=tr">policies.google.com/privacy/frameworks</a>
+adresinde açıklanmıştır.</p>
+<p><strong>Şikâyet hakkı.</strong> Başvurunuza verdiğimiz yanıtı yetersiz bulursanız ya da
+başvurunuz 30 gün içinde yanıtlanmazsa Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz.
+Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'de yaşıyorsanız, yaşadığınız ülkenin veri koruma
+otoritesine de şikâyette bulunabilirsiniz.</p>
+
+<h2>10. Değişiklikler</h2>
+<p>Bu politika güncellendiğinde yukarıdaki yürürlük tarihi değiştirilir ve güncel metin her zaman
+bu adreste yayımlanır.</p>
+
+<h2>11. İletişim</h2>
+<p>PangeaSoft<br />
+E-posta: <a href="mailto:info@rodinyadijital.com">info@rodinyadijital.com</a><br />
+Web: <a href="https://rodinyadijital.com">rodinyadijital.com</a></p>
+</body>
+</html>
